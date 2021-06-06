@@ -1,0 +1,206 @@
+% --- LaTeX CV Template - S. Venkatraman ---
+
+% Set document class and font size
+\documentclass[letterpaper, 11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{ulem}
+
+% Package imports
+\usepackage{setspace, longtable, graphicx, hyphenat, hyperref, fancyhdr, ifthen, everypage, enumitem, amsmath, setspace}
+
+% --- Page layout settings ---
+
+% Set page margins
+\usepackage[left=1in, right=1in, bottom=0.7in, top=0.7in]{geometry}
+
+% Set line spacing
+\renewcommand{\baselinestretch}{1.15}
+
+% --- Page formatting ---
+
+% Set link colors
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{colorlinks=true, linkcolor=RoyalBlue, urlcolor=RoyalBlue}
+
+% Set font to Libertine, including math support
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+
+% Remove page numbering
+\pagenumbering{gobble}
+
+% --- Document starts here ---
+
+\begin{document}
+
+% Name and date of last update to this document
+\noindent{\Huge{Nahyuk Lee}
+\hfill{\it\footnotesize Updated \today}}
+
+% --- Contact information and other items ---
+
+\vspace{0.5cm} 
+\begin{flushleft}
+\begin{tabular}{lll}
+% Line 1: Email, GitHub, office location
+\textbf{Email}: nahyuk0113@cau.ac.kr      &
+\hspace{0.55in} \textbf{GitHub}: github.com/NahyukLEE \\
+
+
+% Line 2: Phone number, LinkedIn, citizenship
+\textbf{Phone}: (+82) 10-2557-5493   & 
+\hspace{0.55in} \textbf{LinkedIn}: linkedin.com/in/nahyuk-lee/   & 
+\end{tabular}
+\end{flushleft}
+
+% --- Start the two-column table storing the main content ---
+
+% Set spacing between columns
+\setlength{\tabcolsep}{8pt}
+
+% Set the width of each column
+\begin{longtable}{p{1.3in}p{4.8in}}
+
+% --- Section: Research interests ---
+
+\nohyphens{\color{OliveGreen}{Research interests}}
+& 3D Graphics, Computer Vision \\
+& \\
+
+% --- Section: Education ---
+
+\color{OliveGreen}{Education} 
+& \textbf{Chung-Ang University} \hfill Seoul, Republic of Korea \\ 
+& B.S in Computer Science and Engineering \hfill Mar. 2019 -- Present \\
+& Mentor : Prof. Junseok Kwon  \\
+& {\it GPA : 4.26 / 4.5}\\
+& \\
+
+% --- Uncomment the next few lines if you want to include some courses ---
+%& \textbf{Selected coursework}
+%\begin{itemize}[noitemsep,leftmargin=*]
+%\item \underline{Relevant subject 1}: Course 1, Course 2, Course 3, Course 4
+%\item \underline{Relevant subject 2}: Course 1, Course 2, Course 3, Course 4
+%\end{itemize} \\
+
+
+
+% --- Section: Publications ---
+\nohyphens{\color{OliveGreen}{Publications}} 
+
+& \textbf{Development of 3D Reconstruction and Object Recognition Model using Video} \\
+& \uline{\textbf{Nahyuk Lee}}, Kyungtaek Lee, Youngsup Park, Sanghyun Seo, Taemin Lee  \\
+& \textit{Journal of Digital Contents Society, vol.21, no.11, pp.2011-2019} \textbf{(KCI)}\\
+& \\
+
+
+& \textbf{A Study on the Prediction of Emotion from Image by Time-flow using Color Analysis} \\
+& Taemin Lee, \uline{\textbf{Nahyuk Lee}}, Sanghyun Seo, Dongwann Kang. \\
+& \textit{The 2020 International Conference on Computational Science and Computational Intelligence (CSCI'20) IEEE, Las Vegas, United States, 2020 -- Oral}\\
+& \\
+
+
+& \textbf{The Method for Creating Paintings depend on User's Emotion} \\
+& Taemin Lee, \uline{\textbf{Nahyuk Lee}}, Sanghyun Seo, Kyunghyun Yoon. \\
+& \textit{International Conference on Innovation Convergence Technology(ICICT2020), Jeju, Korea, 2020 -- Oral}\\
+& \\
+
+
+% --- Section: Research experience ---
+
+\nohyphens{\color{OliveGreen}{Research experience}} 
+& \textbf{Research Intern, Computer Vision Lab @ Korea University} \\
+& {\it Mentor: Prof. Sangpil Kim (Dept. of AI)} \hfill Mar. 2021 -- Present \\
+& Research event-based 3D computer vision. Currently, I'm researching 3D Reconstruction with event signal using Deep-Learning.
+& \\
+
+& \textbf{Research Intern, Computer Graphics Lab @ Chung-Ang University} \\
+& {\it Mentors: Prof. Kyunghyun Yoon \& Sanghyun Seo}  \hfill Dec. 2019 -- Feb. 2021 \\
+& Research 3D reconstruction for virtual space, affective computing using Machine-Learning.
+& \\
+
+% --- Section: Teaching experience ---
+
+{\color{OliveGreen}{Teaching experience}} 
+& \textbf{Teaching Assistant @ Chung-Ang University} \hfill Fall 2020 -- Spring 2021 \\
+& GE-52431: Understanding SW Programming for Problem Solving \\
+& Instructor: Taemin Lee (Davinci SW Education Institute) \\
+& Python language mentoring for course students.\\
+& \\
+
+
+% --- Section: Project experience ---
+
+{\color{OliveGreen}{Project experience}} 
+& {\textbf{Immersive Interaction in eXtended Reality Space for Real-world}} \\
+& {\textbf{Recognition, Augmentation and Control}} \hfill Dec. 2019 -- Feb. 2021 \\
+& {\it Funded by National Research Foundation of Korea (NRF)}  \\
+& \\
+
+& {\textbf{Development of AI-based Virtual Space Structure Estimation}} \\
+& {\textbf{Technology using Interior Space Point Cloud}} \hfill May. 2020 -- Feb. 2021 \\
+& {\it Funded by Korea Electronics Technology Institute (KETI)} \\
+& {\it Cooperated with Innosimulation Co., Ltd. } \\
+& \\
+ 
+& {\textbf{AI-based Dementia Severity Prediction}} \hfill Jun. 2020 -- Feb. 2021 \\
+& {\it Cooperated with Chung-Ang University Hospical (CAUHS)}  \\
+& \\
+ 
+& {\textbf{AI Consultant Training Project}} \hfill Jun. 2021 -- Present \\
+& {\it Funded by LG CNS} \\
+& \\
+
+% --- Section: Awards, scholarships, etc. ---
+% --- Note: section title is spread over two lines ---
+
+{\color{OliveGreen}{Honors and }} 
+& \textbf{16th Kwanjeong Scholarship} \hfill Feb. 2021 -- Present \\
+{\color{OliveGreen}{Scholarship}} 
+& Received Kwanjeong Scholarship from Kwanjeong Educational Foundation. \\
+& {\it Full-tuition \& fees during 2 years of undergraduate studies} \\
+\\
+
+& \textbf{Undergraduate Fellowship (Merit-based)} \\
+& \setlength{\leftskip}{10pt} 1. Da Vinci Scholarship V \hfill Sping 2019 -- Fall 2019\\
+& \setlength{\leftskip}{10pt} {\it Admission with highest distinction, Full-tuition during 1 year of Freshman} \\
+& \setlength{\leftskip}{10pt} 2. Faculty Honor Scholarship \hfill Fall 2019 \\
+& \setlength{\leftskip}{10pt} {\it Dean's List (1st of All), Full-tuition during 1 semester} \\
+& \setlength{\leftskip}{10pt} 3. Department Secondary Honor Scholarship \hfill Spring 2020 -- Fall 2020\\
+& \setlength{\leftskip}{10pt} {\it Dean's List (Top 10\%), 30\%-tuition during 1 semester} \\
+& \setlength{\leftskip}{10pt} 4. SW Specialization Scholarship \hfill Spring 2020 -- Fall 2020\\
+& \setlength{\leftskip}{10pt} {\it Research Fellowship funded by Davinci Software Institute at Chung-Ang Univ.} \\
+\\
+
+& \textbf{Award} \\
+& \setlength{\leftskip}{10pt} 1. Best Paper Award (2nd Grade), Humanities Research \hfill Jul.2020 \\
+& \setlength{\leftskip}{20pt} Institute, Chung-Ang Univ  \\
+& \setlength{\leftskip}{10pt} 2. Best Paper Award (Top 10\%), International Next-generation \hfill Jul.2020 \\
+& \setlength{\leftskip}{20pt} Convergence technology Association  \\
+& \setlength{\leftskip}{10pt} 3. Excellence Award in Project, Innovation Center for \hfill Aug. 2020 \\
+& \setlength{\leftskip}{20pt} Engineering Education, Chung-Ang Univ.  \\
+& \setlength{\leftskip}{10pt} 4. Best Paper Award, Digital Contents Society \hfill Dec. 2020
+
+\\
+% --- Section: Various skills (programming, software, languages, etc.) ---
+
+{\color{OliveGreen}{Skills}} 
+& \textbf{Programming}\\
+& Proficient in: Python \\
+& Familiar with: Java, C++, C \\
+& \\
+
+& \textbf{Languages} \\
+& Native Speaker in Koeran, Proficient in English \\
+& \\
+
+
+
+% --- Section: Other interests/hobbies ---
+
+\nohyphens{\color{OliveGreen}{Other interests}} & Sports, Music and Cello\\
+
+% --- End of CV! ---
+
+\end{longtable}
+\end{document}
